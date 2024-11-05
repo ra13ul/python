@@ -4,7 +4,7 @@ if a < b:
     print('mayor')
 
 a = 0
-b = 25
+b = 10
 while a < b:
     print(a, 'menor que ', b)
     a = a+1
@@ -53,16 +53,35 @@ dict02=dict(zip(lista5, lista6))
 for m in dict02:
     print(m, dict02[m])
 
+print(' - - - - - - - - - - ')
 for x,y in zip(lista5, lista6):
     maximo = max(x, y)
     print('valor mas alto: {}'.format(maximo))
 
+print(' - - - - - - - - - - ')
 keys1=['pais', 'ciudad']
 values1=['espania', 'madrid']
 diccionario3 = dict(zip(keys1, values1))
 for l, m in diccionario3.items():
     print('{}: {}'.format(l, m))
 
+print(' - - - - - - - - - - ')
 print(diccionario3.keys())
 print(diccionario3.values())
 print(diccionario3.items())
+
+print(' - - - - - - - - - - ')
+abc="abcdefghijklmnopqrstuvwxz"
+for i in range(len(abc)):
+    print(abc[i], end=' ')
+
+print(' - - - - - - - - - - ')
+lista7=list(range(6))
+lista8=list(range(25, 35))
+lista9=list(range(0, 20, 2))
+
+print(lista7)
+print(lista8)
+print(lista9)
+
+print(' - - - - - - - - - - ')
