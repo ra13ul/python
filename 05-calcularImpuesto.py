@@ -1,3 +1,4 @@
+import funcionesGlobales
 def total(*args):
     pagoTotal=pago+pago*(impuesto/100)
     return pagoTotal
@@ -5,6 +6,8 @@ def total(*args):
 impuesto=21
 pago=500
 print(total(impuesto, pago))
+
+print(funcionesGlobales.guion())
 
 def precioSinIva(*args):
     totalIva=(impuesto*pago/100)
