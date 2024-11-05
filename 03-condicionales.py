@@ -85,3 +85,21 @@ print(lista8)
 print(lista9)
 
 print(' - - - - - - - - - - ')
+lista10=list('abcdefghijklmnopqrstuvwxz')
+vocales='aeiou'
+
+for n, letra in enumerate(lista10):
+    if letra in vocales:
+        print('{} en la posicion {}'.format(letra, n))
+
+print(' - - - - - - - - - - ')
+abcde = sorted(lista10)[:5]
+print(abcde)
+
+rm=list(enumerate(abcde))
+print(rm)
+
+mr=list(enumerate(abcde, 100))
+print(mr)
+
+print(' - - - - - - - - - - ')
