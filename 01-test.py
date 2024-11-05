@@ -2,7 +2,6 @@
 
 import math
 import random
-import pandas as pd
 print('hello wordl')
 nombre="raul"
 print(nombre)
@@ -39,5 +38,5 @@ lista = [1, 2, 3, 4]
 random.shuffle(lista)
 print(lista)
 
-data = pd.DataFrame(lista)
-print(data)
+
+print(' - - - - - - - - - ')
