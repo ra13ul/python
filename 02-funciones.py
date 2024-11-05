@@ -33,3 +33,13 @@ c = resultado
 d= 10
 
 print(resta(c, d))
+
+print(' - - - - - - - - - - - - - ')
+#el factorial de x es igual a x * (x-1) * (x-2) * … * 1
+def factorial(x): 
+    if x > 1: 
+        return x*factorial(x-1)
+    else:
+        return 1
+x=3
+print(factorial(x))
