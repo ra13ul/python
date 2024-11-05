@@ -2,14 +2,22 @@ a=1
 b=3
 if a < b:
     print('mayor')
-    
-lista=list()
 
-#texto=input('Introduce texto:')
-texto='primero'
-if texto != 0:
-    lista.append(texto)
-    texto=input('Introduce texto:')
-else:
-    print('Has añadido textos')
-print(lista)
+a = 0
+b = 25
+while a < b:
+    print(a, 'menor que ', b)
+    a = a+1
+
+print(' - - - -  - - - - - ')
+
+a=5
+while a:
+    print(a, end=' ')
+    if a==2:
+        break
+    a-=1
+print('\nFuera del bucle')
+print('valor de "a": {}'.format(a))
+
+print(' - - - -  - - - - - ')
