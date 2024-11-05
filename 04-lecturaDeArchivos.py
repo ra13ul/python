@@ -1,15 +1,31 @@
-import pickle
-import csv
-from pathlib import Path
-#LEER ARCHIVOS
-pkl_file = open('myfile.pkl', 'rb')
-diccionario = pickle.load(pkl_file)
-print(pkl_file)
-pkl_file.close()
+print(' - - - - - - - - - - ')
+texto = '''\
+Bello es mejor que feo. 
+Explicito es mejor que implicito. 
+Simple es mejor que complejo. 
+Complejo es mejor que complicado. 
+'''
+print(texto)
+print(' - - - - - - - - - - ')
 
+#Creo el fichero con permiso de escritura
+f = open('short.zen.txt', 'w')
 
-#escribir diccionario
-diccionario2 = {'a':1, 'b':2, 'c':3}
-salida = open('myfile.pkl', 'wb')
-pickle.dump(diccionario, salida)
-salida.close()
+#Escribe en el fichero
+f.writelines(texto)
+
+#Se cierra fichero
+f.close()
+
+f = open('short.zen.txt', 'r')
+linea=f.readline()
+print(linea)
+
+lineaSiguiente=f.__next__()
+print('lineaSiguiente',lineaSiguiente)
+print(next(f))
+
+print(' - - - - - - - - - - ')
+#Leer un archivo de texto completo
+for linea in open('short.zen.txt'):
+    print(linea)
