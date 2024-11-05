@@ -1,4 +1,8 @@
 import funcionesGlobales
+
+#ver objetos
+print(dir(funcionesGlobales))
+
 #from funcionesGlobales import guion
 def total(*args):
     precioTotal=precio+precio*(impuesto/100)
