@@ -70,3 +70,41 @@ def funcion1():
 
 print(a)
 print(funcion1())
+
+
+print(guion())
+#pruebas de parametros
+def funcion2(*args):
+    a='LOG'
+    print(b, a, args)
+    
+b='los LOGS:'
+funcion2('EMPIEZA',1,3,8,65,21,'ACABA')
+
+print(guion())
+print(type(funcion1))
+print(type(b))
+
+print(guion())
+texto=''' Este es UN TEXTO en Varias \
+    lineas para USAR algunas variables'''
+print(texto)
+print(texto.upper())
+print(texto.lower())
+
+print(guion())
+print(texto.capitalize())
+print(texto.count('s'), 'veces aparece en el texto la "s"')
+print(texto.find('y'))
+
+print(guion())
+print(texto.split())
+print(texto.split('para'))
+print(texto.replace('a', 'AAA'))
+
+print(guion())
+nombre=input("Escribe tu nombre ")
+print("Hola", nombre)
+
+a = 65
+print(id(a))
