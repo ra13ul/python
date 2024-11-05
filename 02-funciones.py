@@ -34,7 +34,9 @@ d= 10
 
 print(resta(c, d))
 
-print(' - - - - - - - - - - - - - ')
+def guion():
+    return ' - - - - - - S E P A R A D O R - - - - - - -'
+
 #el factorial de x es igual a x * (x-1) * (x-2) * … * 1
 def factorial(x): 
     if x > 1: 
@@ -43,3 +45,17 @@ def factorial(x):
         return 1
 x=3
 print(factorial(x))
+print(guion())
+
+#contador
+def contador(cont):
+    while cont <= 10:
+        if(cont%2==0):
+            print(cont, 'es par')
+        else:
+            print(cont, 'es impar')
+        cont=cont+1
+
+contador(1)
+
+print(guion())
