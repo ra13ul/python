@@ -29,3 +29,6 @@ print(' - - - - - - - - - - ')
 #Leer un archivo de texto completo
 for linea in open('short.zen.txt'):
     print(linea)
+
+for linea2 in open('2024-10-29_crypto.csv'):
+    print(linea2)
