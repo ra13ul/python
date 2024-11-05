@@ -59,3 +59,14 @@ def contador(cont):
 contador(1)
 
 print(guion())
+
+#AMBITO DE FUNCIONES
+a = 'FUERA de la funcion'
+
+
+def funcion1():
+    a='DENTRO de la funcion'
+    return a
+
+print(a)
+print(funcion1())
