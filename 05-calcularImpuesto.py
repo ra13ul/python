@@ -3,5 +3,12 @@ def total(*args):
     return pagoTotal
 
 impuesto=21
-pago=100
+pago=500
 print(total(impuesto, pago))
+
+def precioSinIva(*args):
+    totalIva=(impuesto*pago/100)
+    precioSinIva=pago-totalIva
+    datos="TOTAL PAGADO: {}€, IMPUESTO: {}€, SIN IVA: {}€".format(pago,totalIva, precioSinIva)
+    return datos
+print(precioSinIva(impuesto, pago))
