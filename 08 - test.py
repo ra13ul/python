@@ -78,4 +78,72 @@ print('7. ¿Si la lista 1 es [4, 6, 8, 1, 0, 3], que sería la lista 1 [-1]?')
 
 print(guion())
 
+#8. Escriba un programa para producir la serie Fibonacci en Python.
 print('8. Escriba un programa para producir la serie Fibonacci en Python.')
+
+n = 5
+
+primero = 0
+segundo = 1
+suma = 0
+count= 1
+
+while(count <= n):
+    print(suma)
+    count+=1
+    primero = segundo
+    segundo = suma
+    suma = primero + segundo
+
+print(guion())
+
+print('9. Escriba un programa en Python para comprobar si un número es primo.')
+
+def numPrimo(numero):
+    if numero < 1:
+        return False
+    elif numero == 2:
+        return True
+    else:
+        for i in range(2, numero):
+            if numero % i == 0:
+                return False
+        return True
+
+
+print(numPrimo(6))
+
+print(guion())
+print('10. Escribir un programa en Python para comprobar si un número es capicúa. Es decir, si se lee igual de derecha a izquierda que de izquierda a derecha.')
+
+a = str(515)
+b = a[::-1]
+if a==b:
+    print('es capicula')
+else:
+    print('No es capicua')
+
+print(guion())
+print('11. Escribir un algoritmo de ordenación para un conjunto de datos numéricos en Python.')
+
+laLista3 = ['10', '3', '7', '25', '1']
+laLista3=[int(i) for i in laLista3]
+
+laLista3.sort()
+print(laLista3)
+
+print(guion())
+
+"""
+12. ¿Cuál de las siguientes declaraciones es inválida?
+a) abc = 1.000.000
+
+b) a b b c = 1000 2000 3000
+
+c) a,b,c = 1,000,000
+
+d) a_b_c = 1,000,000
+
+Solución: b) a b b c = 1000 2000 3000
+"""
+
