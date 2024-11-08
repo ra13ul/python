@@ -1,2 +1,3 @@
-from funcionesGlobales import guion
-print(guion())
+from funcionesGlobales import sep
+
+print(sep)
