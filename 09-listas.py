@@ -42,3 +42,7 @@ print('Uno las listas')
 miLista6 = miLista4 + miLista5
 print(miLista6)
 print(miLista6[2:4])
+
+miLista6 = tuple(miLista6)
+print(type(miLista6))
+print(miLista6)
